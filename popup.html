@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>absolute Center Pop up</title>
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+
+        .pageDiv {
+            position: relative;
+            width: 50%;
+            height: 50%;
+            background-color: red;
+        }
+
+        .popupParent {
+            top: 0px;
+            left: 0px;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: slategray;
+            display: none;
+        }
+
+        .popupChild {
+            width: 50%;
+            height: 50%;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background-color: white;
+        }
+    </style>
+    <script type="javascript">
+    
+    </script>
+</head>
+
+<body>
+    <div class="pageDiv">
+        <button onclick=" document.getElementById('popup').style.display='block';">open</button>
+    </div>
+            <div id="popup" class="popupParent">
+                <div class="popupChild">
+                    <button style="float: right;" onclick="document.getElementById('popup').style.display='none';">X</button>
+                </div>
+            </div>
+
+
+</body>
+
+</html>
